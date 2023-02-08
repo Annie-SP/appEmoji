@@ -11,7 +11,7 @@ let setOfEmoji = new Set();
 function addArray() {
 	let val = emojiInput.value;
   	arrayOfEmoji.push(val);
-	resultArray.innerHTML = `<p>[${arrayOfEmoji} ]</p>`
+	resultArray.innerHTML = `${arrayOfEmoji} `
 	// console.log('arrayOfEmoji---->',arrayOfEmoji);
 }
 
@@ -19,7 +19,7 @@ function addSet() {
 	let value = emojiInput.value;
   	setOfEmoji.add(value); 
     let myArr = Array.from(setOfEmoji); 
-    resultSet.innerHTML = `<p>[${myArr} ]</p>`
+    resultSet.innerHTML = `${myArr} `
     // console.log('setOfEmoji----->',setOfEmoji);
 }
 
